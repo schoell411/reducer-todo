@@ -24,11 +24,14 @@ const TodoForm = ({ dispatch }) => {
     });
   }
   return (
-    <div className="todoList">
+    <div className="todo-form">
       <form onSubmit={submitForm}>
         <input type='text' name='todo' value={item} onChange={handleChanges} placeholder='New Task'/>
-        <button onClick={submitForm}>Submit</button>
-        <button onClick={clearCompleted}>Clear Completed</button>
+
+        <div className="buttons">
+          <button onClick={submitForm}>Submit</button>
+          <button onClick={clearCompleted}>Clear Completed</button>
+        </div>
       </form>
     </div>
   )

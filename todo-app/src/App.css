@@ -2,6 +2,44 @@
   text-align: center;
 }
 
+h1 {
+  font-size: 4rem;
+}
+
+.todo-form, .todoList {
+  background-color: slateblue;
+  border: 3px solid paleturquoise;
+  height: 100vh;
+  color: seashell;
+}
+
+.todo-form {
+  height: 8rem;
+  width: 8rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.todoList {
+  font-family: 'Bangers', cursive;
+}
+
+input {
+  margin-bottom: .8rem;
+  text-align: center;
+}
+
+button {
+  margin: 0 .3rem;
+}
+
+.todo {
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+}
+
 .completed {
-  text-decoration: line-through;
+  text-decoration: double line-through red;
 }

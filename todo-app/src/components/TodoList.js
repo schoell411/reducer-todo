@@ -12,7 +12,7 @@ const TodoList = () => {
     const [state, dispatch] = useReducer(todoReducer, todo);
     
     return (
-        <div>
+        <div className="todoList">
             <TodoForm dispatch={dispatch} />
             <h1>Today's Agenda</h1>
             {state.map(todo => {
