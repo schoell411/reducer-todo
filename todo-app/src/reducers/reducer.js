@@ -1,10 +1,11 @@
 import React, { useState, useReducer } from 'react';
 
-const todo = {
+const todo = 
+  [{
   item: 'Learn about reducers',
   completed: false,
   id: 3892987589
-}
+}]
 
 const todoReducer = (state, action) => {
   switch (action.type) {

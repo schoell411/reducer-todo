@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Todo = ({ todo, dispatch }) => {
+function Todo ({ todo, dispatch }) {
   
   const toggleCompleted = () => {
     dispatch({
