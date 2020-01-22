@@ -14,6 +14,7 @@ const TodoList = () => {
     return (
         <div>
             <TodoForm dispatch={dispatch} />
+            <h1>Today's Agenda</h1>
             {state.map(todo => {
                 return <Todo key={todo.id} todo={todo} dispatch={dispatch} />;
             })}

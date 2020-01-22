@@ -1,17 +1,19 @@
 import React, { useState, useReducer } from 'react';
 
 const todo = 
-  [{
-  item: 'Learn about reducers',
-  completed: false,
-  id: 3892987589
-}]
+  [
+//     {
+//   item: '',
+//   completed: false,
+//   id: ''
+// }
+]
 
 const todoReducer = (state, action) => {
   switch (action.type) {
     case 'ADD_ITEM' :
       return [
-        ...state, { item: action.payload, id: Date.now()}
+        ...state, { item: action.payload, id: Date.now(), completed: false}
       ];
       case 'TOGGLE_COMPLETED' :
         return state.map(todo => {
