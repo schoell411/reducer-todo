@@ -26,7 +26,7 @@ const TodoForm = ({ dispatch }) => {
   return (
     <div className="todoList">
       <form onSubmit={submitForm}>
-        <input type='text' name='todo' onChange={handleChanges} placeholder='New Task'/>
+        <input type='text' name='todo' value={item} onChange={handleChanges} placeholder='New Task'/>
         <button onClick={submitForm}>Submit</button>
         <button onClick={clearCompleted}>Clear Completed</button>
       </form>
